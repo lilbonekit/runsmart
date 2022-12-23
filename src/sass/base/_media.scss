@@ -38,6 +38,11 @@
     .container {
         width: 540px;
     }
+    .header {
+        &__official {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -58,6 +63,29 @@
         }
         &__subtitle {
             line-height: 1.4em;
+        }
+    }
+}
+
+@media (max-width: 405px) {
+    .header {
+        flex-direction: column;
+        justify-content: left;
+        &__official {
+            display: none;
+        }
+    }
+    .promo {
+        &__icons {
+            margin-top: 30px;
+            gap: 30px;
+            flex-direction: column;
+        }
+        &__action {
+            margin-top: 30px;
+        }
+        &__wrapper {
+            margin-top: 30px;
         }
     }
 }
