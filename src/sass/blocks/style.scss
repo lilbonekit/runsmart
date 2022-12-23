@@ -1,0 +1,13 @@
+@import '../base/variables';
+
+body {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+@import './promo';
+@import './header';
