@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     &__logo {
         width: 250px;
@@ -9,8 +9,27 @@
         }
     }
     &__official {
-        color: black;
-        font-size: 18px;
+        width: 215px;
+        color: white;
+        font-size: 12px;
         font-weight: 500;
+        text-align: center;
+        span {
+            font-size: 18px;
+            font-weight: 900;
+        }
+    }
+    &__contacts {
+        width: 190px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__phone {
+        font-size: 18px;
+        font-weight: 900;
+        text-decoration: none;
+        color: white;
     }
 }

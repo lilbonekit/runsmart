@@ -1,4 +1,4 @@
-@import '../base/variables';
+@import 'base/variables';
 
 body {
     font-family: 'Museo Sans Cyrl', sans-serif;
@@ -9,5 +9,6 @@ body {
     margin: 0 auto;
 }
 
-@import './promo';
-@import './header';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/button';

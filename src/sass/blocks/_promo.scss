@@ -2,4 +2,59 @@
     min-height: 650px;
     background: url(../img/first-section/background.png) center (center/cover) no-repeat;
     padding: 20px 0 90px 0;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 42px;
+        color: white;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: white;
+        margin-top: 15px;
+        font-weight: 300;
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 100px;
+    }
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        width: 135px;
+        text-align: center;
+        span {
+            width: 42px;
+            height: 42px;
+            margin-bottom: 20px;
+        }
+    }
+    &__action {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: white;
+        font-weight: 300;
+        p {
+            margin-top: 10px;
+        }
+        a {
+            text-transform: uppercase;
+            color: white;
+        }
+    }
 }
