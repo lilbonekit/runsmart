@@ -43,6 +43,18 @@
             display: none;
         }
     }
+    .consultation {
+        h2 {
+            text-align: center;
+        }
+        &__desc {
+            text-align: center;
+            margin: 0 auto;
+        }
+        form {
+            margin: 30px auto 0 auto;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -63,6 +75,15 @@
         }
         &__subtitle {
             line-height: 1.4em;
+        }
+    }
+    .advantages {
+        padding: 70px 10px 30px 10px;
+    }
+    .consultation {
+        padding: 70px 10px 30px 10px ;
+        &__desc {
+            width: auto;
         }
     }
 }
