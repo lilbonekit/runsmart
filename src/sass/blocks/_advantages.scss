@@ -1,0 +1,24 @@
+.advantages {
+    padding: 70px 0 60px 0;
+    min-height: 470px;
+    background: #F6F6F6;
+    &__wrapper {
+        margin: 0 auto;
+        width: 950px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__item {
+        margin-top: 65px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 280px;
+        span {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
