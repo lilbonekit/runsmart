@@ -1,0 +1,39 @@
+.catalog {
+    padding: 0 0 80px 0;
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        list-style-type: none;
+        padding: 0;
+        margin: 40px 0 0 0;
+    }
+    &__tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 223px;
+        height: 52px;
+        text-transform: uppercase;
+        border: 1px #D0D0D0 solid;
+        transform: skew(-20deg);
+        transition: 0.3s all ease;
+        cursor: pointer;
+        &:hover {
+            color: $main-color;
+            border: 1px $main-color solid;
+        }
+        div {
+            transform: skew(20deg);
+        }
+        &_active {
+            background: $main-color;
+            color: white;
+            border: none;
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
