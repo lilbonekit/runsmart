@@ -11,4 +11,11 @@
         margin-bottom: 15px;
         padding: 20px 19px;
     }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    input[type=number] {
+        -moz-appearance:textfield; /* Firefox */
+    }
 }

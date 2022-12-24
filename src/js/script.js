@@ -12,14 +12,14 @@ $(document).ready(function(){
                 slidesToScroll: 1,
                 infinite: true,
                 arrows: false,
-                dots: true
+                dots: true,
               }
             },
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 arrows: false,
                 dots: true
               }
