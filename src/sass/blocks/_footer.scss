@@ -25,11 +25,16 @@
         color: white;
         text-decoration: none;
         font-weight: 700;
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
     }
     .footer-social {
         display: flex;
         gap: 20px;
         span {
+            cursor: pointer;
             border: 1px solid white;
             border-radius: 100%;
             width: 52px;
@@ -37,6 +42,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: 0.5s all ease;
+            &:hover {
+                position: relative;
+                top: -5px;
+            }
         }
     }
 
