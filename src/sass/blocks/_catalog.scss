@@ -12,10 +12,11 @@
     &__wrapper {
         display: none;
         margin: 60px auto 0 auto;
+        transition: 0.5s all ease;
         &_active {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: center ;
             gap: 30px
         }
     }
