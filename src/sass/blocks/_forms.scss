@@ -3,6 +3,11 @@
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    &__mr {
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
+    }
     input {
         border: none;
         border-radius: 5px;

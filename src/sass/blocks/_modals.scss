@@ -1,0 +1,30 @@
+.modal {
+    width: 382px;
+    min-height: 402px;
+    background: #F2F2F2;
+    text-align: center;
+    padding: 35px 25px 40px 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__close {
+        position: absolute;
+        top: -15px;
+        right: -40px;
+        font-size: 40px;
+        line-height: 1.3em;
+        cursor: pointer;
+        color: $main-color;
+    }
+    &_mini {
+        min-height: 140px;
+    }
+}
+
+#consultation, #order {
+    display: none;
+}
