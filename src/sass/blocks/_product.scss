@@ -26,6 +26,7 @@
         margin-top: 10px;
         &:hover {
             color: $main-color;
+            text-decoration: none;
         }
     }
     &__footer {
@@ -103,6 +104,7 @@
         top: 30px;
         &:hover {
             color: $main-color;
+            text-decoration: none;
         }
     }
     &__content {

@@ -55,6 +55,17 @@
             margin: 30px auto 0 auto;
         }
     }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            transform: skew(0);
+            div {
+                transform: skew(0);
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
