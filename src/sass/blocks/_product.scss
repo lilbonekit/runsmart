@@ -2,7 +2,7 @@
     width: 303px;
     height: 442px;
     border: 1px #E8E8E8 solid;
-    padding: 20px;
+    padding: 20px 20px 15px 20px;
     &__img {
         margin: 0 auto;
         width: 140px;
@@ -22,11 +22,12 @@
     &__footer {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         .catalog-item__prices {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            gap: 5px;
+            gap: 7px;
             .catalog-item__price {
                 font-weight: 700;
                 font-size: 20px;
