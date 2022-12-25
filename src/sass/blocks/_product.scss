@@ -4,6 +4,11 @@
     border: 1px #E8E8E8 solid;
     padding: 20px 20px 15px 20px;
     position: relative;
+    overflow: hidden;
+    transition: 0.5s all ease;
+    &:hover {
+        box-shadow: 4px 4px 20px rgb(194, 194, 194);
+    }
     &__img {
         margin: 0 auto;
         width: 140px;
@@ -19,6 +24,9 @@
         display: block;
         color: $main-color;
         margin-top: 10px;
+        &:hover {
+            color: $main-color;
+        }
     }
     &__footer {
         width: 262px;
@@ -59,11 +67,12 @@
         display: none;
         width: 100%;
         margin: 0;
-        transform: translateX(0);
+        transform: translateY(-300%);
         padding-left: 0;
         list-style-type: none;
         &_active {
             display: block;
+            transform: translateY(0);
         }
         li {
             position: relative;
@@ -96,9 +105,12 @@
         }
     }
     &__content {
+        width: 100%;
         display: none;
+        transform: translateY(-300%);
         &_active {
             display: block;
+            transform: translateY(0);
         }
     }
 }
