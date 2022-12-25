@@ -11,6 +11,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    transition: 0.5s all ease;
     &__close {
         position: absolute;
         top: -15px;
@@ -25,6 +27,6 @@
     }
 }
 
-#consultation, #order {
+#consultation, #order, #thanks, .overlay {
     display: none;
 }
