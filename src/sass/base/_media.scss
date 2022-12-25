@@ -72,10 +72,13 @@
         }
     }
     .reviews {
-        padding: 0 10px;
+        padding: 0 10px 20px 10px;
         .reviews-item {
             gap: 30px;
             align-items: flex-start;
+            &__txt {
+                font-size: 14px;
+            }
             span {
                 width: 80px;
                 height: 80px;
@@ -115,6 +118,11 @@
         padding: 70px 10px 30px 10px ;
         &__desc {
             width: auto;
+        }
+    }
+    .footer {
+        &__info {
+            width: 100%;
         }
     }
 }

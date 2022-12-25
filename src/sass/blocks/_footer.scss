@@ -1,0 +1,43 @@
+.footer {
+    position: relative;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        width: 460px;
+        height: 270px;
+        padding: 50px 53px;
+        background: $main-color;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    address {
+        font-size: 20px;
+        color: white;
+        line-height: 20px;
+        margin-bottom: 0;
+        }
+    }
+    &__phone {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    .footer-social {
+        display: flex;
+        gap: 20px;
+        span {
+            border: 1px solid white;
+            border-radius: 100%;
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}
