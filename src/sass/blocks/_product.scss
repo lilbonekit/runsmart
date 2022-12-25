@@ -24,9 +24,10 @@
         display: block;
         color: $main-color;
         margin-top: 10px;
+        text-decoration: none;
         &:hover {
             color: $main-color;
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
     &__footer {
@@ -102,9 +103,10 @@
         transform: translateX(-50%);
         left: 50%;
         top: 30px;
+        text-decoration: none;
         &:hover {
             color: $main-color;
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
     &__content {

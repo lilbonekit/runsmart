@@ -1,0 +1,25 @@
+.reviews {
+    padding-bottom: 50px;
+    &__wrapper {
+        margin-top: 60px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .reviews-item {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 915px;
+        gap: 60px;
+    }
+    span {
+        width: 169px;
+        height: 169px;
+        img {
+            width: auto;
+        }
+    }
+}

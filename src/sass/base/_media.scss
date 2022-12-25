@@ -32,6 +32,11 @@
             align-items: center;
         }
     }
+    .reviews {
+        .reviews-item {
+            width: auto;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -63,6 +68,21 @@
             transform: skew(0);
             div {
                 transform: skew(0);
+            }
+        }
+    }
+    .reviews {
+        padding: 0 10px;
+        .reviews-item {
+            gap: 30px;
+            align-items: flex-start;
+            span {
+                width: 80px;
+                height: 80px;
+                img {
+                    width: 80px;
+                    height: 80px;
+                   }
             }
         }
     }
