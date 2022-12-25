@@ -6,6 +6,10 @@
     text-transform: uppercase;
     font-weight: 300;
     cursor: pointer;
+    transition: 0.3s all ease;
+    &:hover {
+        transform: scale(1.05);
+    }
     &_header {
         width: 180px;
         height: 32px;
