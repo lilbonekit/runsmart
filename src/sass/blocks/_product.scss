@@ -56,11 +56,15 @@
         }
     }
     &__list {
+        display: none;
         width: 100%;
         margin: 0;
         transform: translateX(0);
         padding-left: 0;
         list-style-type: none;
+        &_active {
+            display: block;
+        }
         li {
             position: relative;
             margin-bottom: 5px;
@@ -89,6 +93,12 @@
         top: 30px;
         &:hover {
             color: $main-color;
+        }
+    }
+    &__content {
+        display: none;
+        &_active {
+            display: block;
         }
     }
 }
