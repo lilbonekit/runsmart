@@ -10,7 +10,14 @@
         margin: 40px 0 0 0;
     }
     &__wrapper {
-        margin-top: 60px;
+        display: none;
+        margin: 60px auto 0 auto;
+        &_active {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px
+        }
     }
     &__tab {
         display: flex;

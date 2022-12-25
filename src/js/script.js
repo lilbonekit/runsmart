@@ -38,4 +38,10 @@ $(document).ready(function(){
             // instead of a settings object
           ]
     });
+
+    $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
+      $(this)
+        .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+        .closest('.container').find('div.catalog__wrapper').removeClass('catalog__wrapper_active').eq($(this).index()).addClass('catalog__wrapper_active');
+    });
   });
