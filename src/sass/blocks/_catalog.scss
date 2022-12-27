@@ -7,11 +7,11 @@
         gap: 10px;
         list-style-type: none;
         padding: 0;
-        margin: 40px 0 0 0;
+        margin: 50px 0 0 0;
     }
     &__wrapper {
         display: none;
-        margin: 60px auto 0 auto;
+        margin: 30px auto 0 auto;
         transition: 0.5s all ease;
         &_active {
             display: flex;

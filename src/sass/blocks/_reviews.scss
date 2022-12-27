@@ -1,14 +1,15 @@
 .reviews {
     padding-bottom: 90px;
     &__wrapper {
-        margin-top: 60px auto 0 auto;
+/*         margin: 50px auto 0 auto; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
     }
     .reviews-item {
-        margin-top: 60px;
+        margin-top: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
