@@ -78,50 +78,38 @@ $(document).ready(function(){
       })
     });
   
-    $('.feed-form form').validate({
-      messages: {
-        name: "Please specify your name"
-      }
-    });
 
-    /* $('.feed-form').validate({
+function validateForms(form){
+  $(form).validate({
       rules: {
-        name: "required",
-        phone: "required",
-        email: {
-          required: true,
-          email: true
-        }
+          name: {
+              required: true,
+              minlength: 2
+          },
+          phone: "required",
+          email: {
+              required: true,
+              email: true
+          }
       },
       messages: {
-        name: "Please specify your name",
-        email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
-        }
-      }
-
-    });
- */
-    /* function validateForm(form) {
-      $(item).validate({
-        rules: {
-          // simple rule, converted to {required:true}
-          name: "required",
-          // compound rule
-          phone: {
-            required: true
-          },
+          name: {
+              required: "Пожалуйста, введите свое имя",
+              minlength: jQuery.validator.format("Введите {0} символа!")
+            },
+          phone: "Пожалуйста, введите свой номер телефона",
           email: {
-            required: true,
-            email: true
+            required: "Пожалуйста, введите свою почту",
+            email: "Неправильно введен адрес почты"
           }
-        }
-      }) 
-    };
-
-    validateForm('#consultation-form');
-    validateForm('#consultation form');
-    validateForm('#order form'); */
-    
+      }
   });
+};
+
+validateForms('#consultation-form');
+validateForms('#consultation form');
+validateForms('#order form');
+
+$("input[name=phone]").mask("+38(999) 999-99-99");
+
+});
