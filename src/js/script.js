@@ -76,7 +76,52 @@ $(document).ready(function(){
         $('#order .modal__title').text($('catalog-item__title').eq(i).text());
         $('.overlay, #order').css('display', 'flex');
       })
-    })
+    });
+  
+    $('.feed-form form').validate({
+      messages: {
+        name: "Please specify your name"
+      }
+    });
 
+    /* $('.feed-form').validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Please specify your name",
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        }
+      }
+
+    });
+ */
+    /* function validateForm(form) {
+      $(item).validate({
+        rules: {
+          // simple rule, converted to {required:true}
+          name: "required",
+          // compound rule
+          phone: {
+            required: true
+          },
+          email: {
+            required: true,
+            email: true
+          }
+        }
+      }) 
+    };
+
+    validateForm('#consultation-form');
+    validateForm('#consultation form');
+    validateForm('#order form'); */
     
   });
