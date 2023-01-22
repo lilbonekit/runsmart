@@ -21,4 +21,7 @@
             height: 70px;
         }
     }
+    &_ico_heart {
+        animation: heartbeat 1.5s ease infinite;
+    }
 }
