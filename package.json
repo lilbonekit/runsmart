@@ -18,6 +18,7 @@
     "sass": "^1.57.1"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "jquery": "^3.6.3",
     "tiny-slider": "^2.9.4"
   }
